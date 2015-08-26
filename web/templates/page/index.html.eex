@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-lg-6 mermaid" id="mermaid-output">
+    <div id="demo">
+      <h1>{{title | uppercase}}</h1>
+      <ul>
+        <li
+          v-repeat="todos"
+          v-on="click: done = !done"
+          class="{{done ? 'done' : ''}}">
+          {{content}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
